@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
-  padding: 0 30px;
+  /*padding: 0 30px;*/
   background-color: #ffb96d;
   color: #24002D;
   line-height: 1.6;
@@ -11,18 +11,18 @@ body {
 
 /* Header */
 .header {
-  width: 100vw;           /* Stretch header full width */
-  margin-left: calc(50% - 50vw); /* Center header if body has padding */
+  width: 100%;              /* Stretches to the full width of the viewport */
+  margin-left: 0;           /* No negative margin */
   box-sizing: border-box;
   background-color: #92ff66;
-  color: #064b00;
-  padding: 1rem 0;        /* Remove horizontal padding */
+  color: #24002D;
+  padding: 1rem 0;
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px; /* Match body side padding */
+  padding: 0 30px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -87,7 +87,7 @@ body {
   width: 80%;
   height: 300px;
   background-color: white;
-  color: #064b00;
+  color: #24002D;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,10 +119,11 @@ body {
 
 /* About */
 .about {
-  background-color: #fff;
+  background-color: white;
   color: #24002D;
   padding: 2rem 3rem;
-  margin: 2rem 0;
+  max-width: 900px;
+  margin: 2rem auto;
   border: 2px solid #24002D;   /* Match service-box border */
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
@@ -148,11 +149,6 @@ body {
   border-radius: 12px;
   font-weight: bold;
   font-size: 1.1rem;
-}
-
-.contact-button.secondary {
-  background-color: #6AF232;
-  color: #064b00;
 }
 
 .contact-button:hover {
