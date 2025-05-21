@@ -2,6 +2,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  padding: 0 10px;
   background-color: #BEF231;
   color: #064b00;
   line-height: 1.6;
@@ -9,10 +11,12 @@ body {
 
 /* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem 1rem; /* Reduce horizontal padding */
+  width: 100%;        /* Ensure header doesn't overflow */
+  box-sizing: border-box;
   background-color: #6AF232;
   color: #064b00;
 }
