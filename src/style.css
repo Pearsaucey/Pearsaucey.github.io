@@ -127,3 +127,37 @@ body {
 .contact-button:hover {
   opacity: 0.9;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .featured-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .contact-section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .contact-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
